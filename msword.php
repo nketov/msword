@@ -13,8 +13,12 @@ if (!copy($patternFile, $docxFile)) {
  
 //Список параметров
 $params = array(
-    'NAME'    => $name,
-    'SUR' => 'Турчинов'
+    '{{NAME1}}'    => $name."111"."Турчинов",
+    '{{NAME2}}'    => $name."222"."Турчинов",
+    '{{NAME3}}'    => $name."333"."Турчинов",
+    '{{NAME4}}'    => $name."444"."Турчинов",
+    '{{NAME5}}'    => $name."555"."Турчинов",
+
 );
  
 if (!file_exists($docxFile)) {
