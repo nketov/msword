@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c536ce9-9e03-4f3d-84a5-fbfca2f042ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pattern/pattern.docx" afterPath="$PROJECT_DIR$/pattern/pattern.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/РђР»РµРєСЃР°РЅРґСЂ Р’Р°Р»РµРЅС‚РёРЅРѕРІРёС‡.docx" afterPath="$PROJECT_DIR$/result/РђР»РµРєСЃР°РЅРґСЂ Р’Р°Р»РµРЅС‚РёРЅРѕРІРёС‡.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msword.php" afterPath="$PROJECT_DIR$/msword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wallet.php" afterPath="$PROJECT_DIR$/wallet.php" />
     </list>
     <ignored path="msword.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="msword.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="msword.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/msword.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -37,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wallet.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wallet.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wallet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="231">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -56,8 +54,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/wallet.html" />
-        <option value="$PROJECT_DIR$/wallet.php" />
         <option value="$PROJECT_DIR$/msword.php" />
+        <option value="$PROJECT_DIR$/wallet.php" />
       </list>
     </option>
   </component>
@@ -71,7 +69,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="width" value="1932" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -85,7 +83,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -98,13 +96,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -154,15 +146,24 @@
       <option name="presentableId" value="Default" />
       <updated>1492161716662</updated>
       <workItem from="1492161718543" duration="5256000" />
-      <workItem from="1492535361024" duration="1095000" />
+      <workItem from="1492535361024" duration="1114000" />
+      <workItem from="1492620460662" duration="951000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1492539523675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492539523675</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6351000" />
+    <option name="totallyTimeSpent" value="7321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1932" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27253446" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -187,20 +188,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/msword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wallet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -218,8 +215,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/msword.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wallet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msword.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wallet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>

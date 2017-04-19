@@ -1,4 +1,5 @@
-<?PHP header("Content-Type: text/html; charset=utf-8");
+<?PHP 
+//header("Content-Type: text/html; charset=utf-8");
 
 $text="";
 if ($_POST) {
@@ -7,8 +8,13 @@ if ($_POST) {
     $text .= " " . $key . " = " . $value . " ";
   }
 
-  mail('nketov@bigmir.net', "Teст", $text);
-  echo "WMI_RESULT=OK";
+  $path="file.txt";
+  $file = fopen($path, 'w');
+  fputs($file, $text);
+  fclose($file);
+
+  //if(mail('ketovnv@gmail.com', "Teст", $text)){
+  echo "WMI_RESULT=OK";}
 }
 else{
 ?>
