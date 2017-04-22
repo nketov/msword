@@ -1,33 +1,24 @@
-<?PHP
-header("Content-Type: text/html; charset=utf-8");
+<?php
 
-$text = "";
-if ($_POST) {
+//$mail="mailbox@eteryalliance.ru";
+//$telefon = 123;
+//$mob = 321;
+//$mess = "Имя: "."1"."<BR>";
+//$mess .= "Организация: "."2"."<BR>";
+//$mess .= "Адрес: "."3"."<BR>";
+//$mess .= "Способ оплаты: "."4"."<BR>";
+//$mess .= "e-mail: ".$mail."<BR>";
+//$mess .= "Домашний телефон: ".$telefon."<BR>";
+//$mess .= "Мобильный телефон: ".$mob."<BR>";
+//$mess .= "Дополнительная информация: ".$dop."<BR><BR><BR>";
+//$header = "Content-Type: text/plain; charset=windows-1251\r\n";
+//$header .= "From: ".$mail."\r\n";
+//
+//if(mail("nketov@bigmir.net", "Письмо от  - ".$mail, $mess, $header))
+//    echo "OK";
+//else
+//    echo ":(";
 
-    foreach ($_POST as $key => $value) {
-        $text .= " " . $key . " = " . $value . " ";
-    }
-
-
-    if (mailWithFile("ketovnv@gmail.com", "Тест", $text, "result/pattern.docx")) {
-        echo "WMI_RESULT=OK";
-    }
-} else {
-    ?>
-
-
-    <form method="post" action="https://wl.walletone.com/checkout/checkout/Index">
-        <input name="WMI_MERCHANT_ID" value="196139710250"/>
-        <input name="WMI_PAYMENT_AMOUNT" value="2.00"/>
-        <input name="WMI_CURRENCY_ID" hidden value="643"/>
-        <input name="WMI_DESCRIPTION" value="Оплата демонстрационного заказа"/>
-        <input name="WMI_SUCCESS_URL" hidden value="http://eteryalliance.ru"/>
-        <input name="WMI_FAIL_URL" hidden value="http://eteryalliance.ru"/>
-        <input type="submit"/>
-    </form>
-
-
-<?php }
 
 function mailWithFile($emailAddress, $subject, $text, $mailFile)
 {
@@ -64,4 +55,4 @@ function mailWithFile($emailAddress, $subject, $text, $mailFile)
 }
 
 
-?>
+mailWithFile("nketov@bigmir.net", "Тест", "фаил", "result/pattern.docx");
