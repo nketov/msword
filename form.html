@@ -6,6 +6,7 @@
     <title>Форма</title>
 
     <script src="js/jquery-3.0.0.min.js"></script>
+    <link type="text/css" href="js/jquery-ui.min.css" rel="stylesheet"/>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/form_script.js"></script>
 
@@ -14,22 +15,23 @@
 <body>
 
 
-<form method="post" action="msword.php">
+<form action="msword.php"      method="POST">
 
-    <p><label>Кредитор: <br><INPUT id="creditor" type="text" size=35></label></p>
-    <p><label>Адрес Кредитора:<br><INPUT id="сreditorAdress" type="text" size=35></label></p>
+<p><label>Кредитор:  <INPUT name="creditor" type="text" size=35></label>
+    <label> Адрес Кредитора: <INPUT name="creditorAdress" type="text" size=35></label></p>
     <br>
-    <p><label>Должник (Ф.И.О.): <br><INPUT id="debitor" type="text" size=35></label></p>
-    <p><label>Адрес Должника:<br><INPUT id="debitorAdress" type="text" size=35></label></p>
-    <p><label>Телефон : <INPUT id="phone" type="text" class="" size=25></label></p>
-    <p><label>E-mail : <INPUT id="emailAddress" type="text" class="" size=25></label></p>
+    <p><label> Должник (Ф.И.О.):  <INPUT name="debitor" type="text" size=35></label>
+    <label> Адрес Должника:<INPUT name="debitorAdress" type="text" size=35></label>
+    <label> Телефон: <INPUT name="phone" type="text" class="" size=25></label>
+   <label> E-mail:  <INPUT name="emailAddress" type="text" class="" size=25></label></p>
     <br>
-    <p><label>Номер договора : <INPUT id="contractID" type="text" class="" size=25></label></p>
-    <p><label>Дата договора: <br><INPUT id="date" type="text" size=10></label></p>
-    <p><label>Дата отказа: <br><INPUT id="date1" type="text" size=10></label></p>
+    <p><label>Номер договора: <INPUT name="contractID" type="text" class="" size=25></label></p>
+    <br><br>
+    <p><label> Дата договора: <INPUT name="date" type="text" size=10 readonly="true"></label>
+    <label> Дата отказа: <INPUT name="date1" type="text" size=10 readonly="true"></label>
+    <input  id="check" name="ch" type="checkbox"><label style="color: red"> Отказ действует до: <INPUT name="denial" type="text" size=10 readonly="true"></label></p>
 
-    <p><input  id="check" type="checkbox" checked><label>Отказ действует до: <br><INPUT id="denial" type="text" size=10></label></p>
-
+    <input type="submit">
 
 </form>
 </body>
