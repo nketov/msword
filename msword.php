@@ -1,8 +1,9 @@
 <?php
+//(Отказ действует в срок до "___"__________  ____ г.)
 //Указываем путь до подготовленного документа
 $patternFile = 'pattern/pattern.docx';
 $name='Александр Валентинович';
-$docxFile = 'result/'.$name.'.docx';
+$docxFile = 'mails/'.$name.'.docx';
 
 
 if (!copy($patternFile, $docxFile)) {

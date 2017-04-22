@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/form_script.js"></script>
+
+</head>
+
+<body>
+
+
+<form method="post" action="msword.php">
+
+    <p><label>Кредитор: <br><INPUT id="creditor" type="text" size=35></label></p>
+    <p><label>Адрес Кредитора:<br><INPUT id="сreditorAdress" type="text" size=35></label></p>
+    <br>
+    <p><label>Должник (Ф.И.О.): <br><INPUT id="debitor" type="text" size=35></label></p>
+    <p><label>Адрес Должника:<br><INPUT id="debitorAdress" type="text" size=35></label></p>
+    <p><label>Телефон : <INPUT id="phone" type="text" class="" size=25></label></p>
+    <p><label>E-mail : <INPUT id="emailAddress" type="text" class="" size=25></label></p>
+    <br>
+    <p><label>Номер договора : <INPUT id="contractID" type="text" class="" size=25></label></p>
+    <p><label>Дата договора: <br><INPUT id="date" type="text" size=10></label></p>
+    <p><label>Дата отказа: <br><INPUT id="date1" type="text" size=10></label></p>
+
+    <p><input  id="check" type="checkbox" checked><label>Отказ действует до: <br><INPUT id="denial" type="text" size=10></label></p>
+
+
+</form>
+</body>
+</html>

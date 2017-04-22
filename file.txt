@@ -1,1 +1,0 @@
- purchaseId = xxxxx  customerId = yyyyy 
