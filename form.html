@@ -2,37 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Р¤РѕСЂРјР°</title>
+    <meta charset="WINDOWS-1251">
+    <title>Форма</title>
 
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <link type="text/css" href="js/jquery-ui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/form_script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 
 </head>
 
 <body>
 
 
-<form action="msword.php"      method="POST">
+<form action="wallet.php"      method="get" accept-charset="utf-8">
 
-<p><label>РљСЂРµРґРёС‚РѕСЂ:  <INPUT name="creditor" type="text" size=35></label>
-    <label> РђРґСЂРµСЃ РљСЂРµРґРёС‚РѕСЂР°: <INPUT name="creditorAdress" type="text" size=35></label></p>
+<p><label>Кредитор:  <INPUT name="creditor" type="text" size=35></label>
+    <label> Адрес Кредитора: <INPUT name="creditorAdress" type="text" size=35></label></p>
     <br>
-    <p><label> Р”РѕР»Р¶РЅРёРє (Р¤.Р.Рћ.):  <INPUT name="debitor" type="text" size=35></label>
-    <label> РђРґСЂРµСЃ Р”РѕР»Р¶РЅРёРєР°:<INPUT name="debitorAdress" type="text" size=35></label>
-    <label> РўРµР»РµС„РѕРЅ: <INPUT name="phone" type="text" class="" size=25></label>
+    <p><label> Должник (Ф.И.О.):  <INPUT name="debitor" type="text" size=35></label>
+    <label> Адрес Должника:<INPUT name="debitorAdress" type="text" size=35></label>
+    <label> Телефон: <INPUT name="phone" type="text" class="" size=25></label>
    <label> E-mail:  <INPUT name="emailAddress" type="text" class="" size=25></label></p>
     <br>
-    <p><label>РќРѕРјРµСЂ РґРѕРіРѕРІРѕСЂР°: <INPUT name="contractID" type="text" class="" size=25></label></p>
+    <p><label>Номер договора: <INPUT name="contractID" type="text" class="" size=25></label></p>
     <br><br>
-    <p><label> Р”Р°С‚Р° РґРѕРіРѕРІРѕСЂР°: <INPUT name="date" type="text" size=10 readonly="true"></label>
-    <label> Р”Р°С‚Р° РѕС‚РєР°Р·Р°: <INPUT name="date1" type="text" size=10 readonly="true"></label>
-    <input  id="check" name="ch" type="checkbox"><label style="color: red"> РћС‚РєР°Р· РґРµР№СЃС‚РІСѓРµС‚ РґРѕ: <INPUT name="denial" type="text" size=10 readonly="true"></label></p>
+    <p><label> Дата договора: <INPUT name="date" type="text" size=10 readonly="true"></label>
+    <label> Дата отказа: <INPUT name="date1" type="text" size=10 readonly="true"></label>
+    <input  id="check" name="ch" type="checkbox"><label style="color: red"> Отказ действует до: <INPUT name="denial" type="text" size=10 readonly="true"></label></p>
 
     <input type="submit">
 
+
 </form>
+
+<script>
+
+    $('[name = "date"]').datepicker({
+        dateFormat: 'dd/mm/yy ', showAnim: 'show', defaultDate: '-1y', changeYear: true
+    });
+
+    $('[name = "date1"]').datepicker({
+        dateFormat: 'dd/mm/yy ', showAnim: 'show', defaultDate: '-0d', changeYear: true
+    });
+
+    $('[name = "denial"]').datepicker({
+        dateFormat: 'dd/mm/yy ', showAnim: 'show', defaultDate: '+1m', changeYear: true
+    });
+
+</script>
+
 </body>
 </html>

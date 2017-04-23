@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c536ce9-9e03-4f3d-84a5-fbfca2f042ed" name="Default" comment="20_04_2017">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/ajaxupload.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/delete.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/form_script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-bg_glass_20_555555_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-bg_glass_40_0078a3_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-bg_glass_40_ffc73d_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-bg_gloss-wave_25_333333_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-bg_inset-soft_25_000000_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-bg_inset-soft_30_f58400_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-icons_4b8e0b_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-icons_a83300_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-icons_cccccc_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/images/ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-3.0.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mails/1.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mails/1488-1488.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mails/2.docx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pattern/~$attern.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pattern/~WRL0003.tmp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pattern/pattern.docx" afterPath="$PROJECT_DIR$/pattern/pattern.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mails/.docx" afterPath="$PROJECT_DIR$/mails/.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mails/111.docx" afterPath="$PROJECT_DIR$/mails/111.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mails/148814881488.docx" afterPath="$PROJECT_DIR$/mails/148814881488.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form.html" afterPath="$PROJECT_DIR$/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/form_script.js" afterPath="$PROJECT_DIR$/js/form_script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msword.php" afterPath="$PROJECT_DIR$/msword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wallet.php" afterPath="$PROJECT_DIR$/wallet.php" />
     </list>
     <ignored path="msword.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,21 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="msword.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/msword.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="378">
+              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#label#2;n#p#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -53,42 +63,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_submit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/form_submit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/form_script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wallet.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wallet.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wallet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mailtest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mailtest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="73" />
-              <folding />
+            <state relative-caret-position="602">
+              <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+              <folding>
+                <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+                <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+                <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,10 +87,11 @@
       <list>
         <option value="$PROJECT_DIR$/wallet.html" />
         <option value="$PROJECT_DIR$/mailtest.php" />
-        <option value="$PROJECT_DIR$/wallet.php" />
         <option value="$PROJECT_DIR$/js/form_script.js" />
-        <option value="$PROJECT_DIR$/form.html" />
         <option value="$PROJECT_DIR$/msword.php" />
+        <option value="$PROJECT_DIR$/delete.php" />
+        <option value="$PROJECT_DIR$/form.html" />
+        <option value="$PROJECT_DIR$/wallet.php" />
       </list>
     </option>
   </component>
@@ -122,7 +107,6 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
-    <option name="y" value="-9" />
     <option name="width" value="1932" />
     <option name="height" value="1050" />
   </component>
@@ -137,7 +121,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -150,13 +134,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -214,6 +192,8 @@
       <workItem from="1492690371429" duration="2491000" />
       <workItem from="1492850173488" duration="7341000" />
       <workItem from="1492874527726" duration="4213000" />
+      <workItem from="1492925890860" duration="3745000" />
+      <workItem from="1492953611258" duration="11882000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1492539523675</created>
@@ -226,10 +206,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21366000" />
+    <option name="totallyTimeSpent" value="36993000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1050" extended-state="0" />
+    <frame x="-9" y="0" width="1932" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27556512" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -275,6 +255,90 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/msword.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#label#2;n#p#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wallet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mailtest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#label#2;n#p#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form_submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/form_script.js" />
+    <entry file="file://$PROJECT_DIR$/wallet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mailtest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msword.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -295,23 +359,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/form_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/form_script.js" />
     <entry file="file://$PROJECT_DIR$/wallet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="30" />
-          <folding />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -335,7 +395,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -359,7 +423,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -375,7 +443,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -391,57 +463,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mailtest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="73" />
-          <folding />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/form_submit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1008">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/form_script.js" />
+    <entry file="file://$PROJECT_DIR$/mailtest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="82" column="14" selection-start-line="3" selection-start-column="0" selection-end-line="82" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state relative-caret-position="378">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#label#2;n#p#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/form_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wallet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="602">
+          <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding>
+            <marker date="1492965338316" expanded="true" signature="467:584" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="682:979" ph="..." />
+            <marker date="1492965338316" expanded="true" signature="1289:1342" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
