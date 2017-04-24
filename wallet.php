@@ -7,9 +7,9 @@ if (strtoupper($_POST["WMI_ORDER_STATE"]) == "ACCEPTED") {
 $contractNumber=$_POST["WMI_PAYMENT_NO"];
 
 
-    if (mailWithFile("ketovnv@gmail.com", $contractNumber, $_POST["WMI_PAYMENT_NO"], "mails/".$_POST["WMI_PAYMENT_NO"].".docx")) {
+    if (mailWithFile("ketovnv@gmail.com", '№'.$contractNumber, 'Договор №'.$contractNumber.' оплачен', "mails/".$contractNumber.".docx")) {
         echo "WMI_RESULT=OK";
-        mail(file_get_contents("mails/".$_POST["WMI_PAYMENT_NO"].".eml"), "Оплачено", "Оплачено");
+        mail(file_get_contents("mails/".$contractNumber.".eml"), "Оплачено", 'Договор №'.$contractNumber.' оплачен',"Content-Type: text/html; charset=UTF-8");
 
     }
 } else {
@@ -80,23 +80,10 @@ function makeDocx()
 {
 
 
-//foreach ($_GET as $get)
-//{
-//    echo iconv("UTF-8","windows-1251",$get);
-//    echo '<br>';
-//    echo mb_detect_encoding($get);
-//    echo '<br>';}
-//    exit;
-
-
-
-
-
     $patternFile = 'pattern/pattern.docx';
 
     $docxFile = 'mails/' . $_GET['contractID'] . '.docx';
     $emailFile = 'mails/' . $_GET['contractID'] . '.eml';
-
 
     if (!file_exists('mails')) mkdir('mails', 0755, true);
     if (file_exists($docxFile)) unlink($docxFile);
@@ -104,12 +91,7 @@ function makeDocx()
 
     file_put_contents($emailFile, $_GET['emailAddress']);
 
-
-
-
-
     copy($patternFile, $docxFile);
-
 
     $Month_r = array(
         "01" => "января",
