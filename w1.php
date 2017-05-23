@@ -1,5 +1,11 @@
 <?PHP
 
+$text=file_get_contents('Instruction.htm');
+
+mailWithFile('ketovnv@gmail.com','Тест', $text, 'wallet.php');
+exit;
+
+
 if (strtoupper($_POST["WMI_ORDER_STATE"]) == "ACCEPTED") {
 
 $text='ИНСТРУКЦИЯ
@@ -15,8 +21,6 @@ b.	Лично доставив его в отделение кредитора. 
 3.	Будьте готовы выждать 2-3 дня. На практике звонки прекращаются на следующий день, однако в отдельных случаях могут быть исключения. По прошествии 5 рабочих дней — звоните нам, мы задействуем наши юридические ресурсы. Наш телефон +7 495 532-19-44. Будьте готовы выслать на нашу почту help@collectoramnet.ru отсканированные документы: подписанное заявление и (если направляли почтой) почтовый квиток с уведомлением о вручении.
 4.	Да, мы сопровождаем процессы в суде для наших клиентов. Мы начинаем от суммы в 300 000 рублей и пока работаем только в Москве. Пожалуйста, звоните нам, и мы обо всем договоримся.
 ';
-
-
     $contractNumber = $_POST["WMI_PAYMENT_NO"];
 
     $docxFile = 'pattern/mails/' . (int)$contractNumber . '.docx';
@@ -28,7 +32,7 @@ b.	Лично доставив его в отделение кредитора. 
 
     if (mailWithFile("ab@grey-fox.ru", '№' . $contractNumber, 'Договор №' . $contractNumber . ' оплачен', 'pattern/mails/' . $dir . 'Заявление на отключение коллекторов.docx')) {
         echo "WMI_RESULT=OK";
-        mailWithFile($email, '№' . $contractNumber, $text, 'pattern/mails/' . $dir . 'Заявление на отключение коллекторов.docx');
+        mailWithFile($email, '№' . $contractNumber, 'Договор №' . $contractNumber . ' оплачен, Ваше заявление в прикреплении', 'pattern/mails/' . $dir . 'Заявление на отключение коллекторов.docx');
 
         unlink("pattern/mails/" . (int)$contractNumber . ".docx");
         unlink("pattern/mails/" . (int)$contractNumber . ".eml");
