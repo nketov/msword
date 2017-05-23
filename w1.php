@@ -1,5 +1,5 @@
 <?PHP
-
+ 
 $text=file_get_contents('Instruction.htm');
 
 mailWithFile('ketovnv@gmail.com','Тест', $text, 'wallet.php');
