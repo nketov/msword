@@ -1,0 +1,33 @@
+/*
+Tabs content
+*/
+
+.tabs-nav{
+    text-align:center;
+    padding:0;
+    border-bottom:2px solid #eee;
+    li{
+        a{
+            display: block;
+            @include border-radius(3px);
+            border: 2px solid transparent;
+            padding: 10px 20px;
+            text-transform: capitalize;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight:700;
+            color: $base-color;
+            font-family: $secondry-font;
+            margin-bottom:-2px;
+            &:hover{
+                color: $primary-color;
+            border-bottom-color: $primary-color;
+            }
+        }
+        &.active a{
+            cursor: default;
+            color: $primary-color;
+            border-bottom-color: $primary-color;
+        }
+    }
+}

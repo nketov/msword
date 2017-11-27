@@ -1,0 +1,104 @@
+/*
+Template responsive style. Must be bottom into css file.
+*/
+@media(max-width:767px){
+    h1 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .lead {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    h4 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .testimonial_slider p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .btn-lg {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    .btn-md {
+        padding: 10px 20px;
+    }
+    .navbar-inverse .navbar-toggle{
+        border: 0px;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #101010;
+        background-color: #222;
+    }
+    .hero-padded {
+        padding-top: 100px;
+        padding-bottom: 80px;
+        h1 {
+            font-size: 35px;
+            line-height:35px;
+            margin-bottom: 20px;
+        }
+        .lead {
+    font-size: 13px;
+}
+    }
+    .video-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+     i {
+    font-size: 50px;
+    line-height: 75px;
+     }
+}
+.mentos-newsletter{
+    .form-control{
+        min-height: 42px;
+    }
+}
+.cta-1, .cta-1 .text-right{
+    text-align: center;
+}
+#benefits img.img-responsive{
+    display: block;    
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.testi-box .thumb {
+    width: 40px;
+    margin-right: 10px;
+}
+.navbar-brand{
+    font-size: 22px;
+    margin-top: -3px;
+}
+.hero-contact{
+    background-attachment: scroll!important;
+    background-size: cover!important;
+    padding:100px 0;
+    text-align:center;
+    .video-link{
+        i{
+            display: none;
+        }
+    }
+    .space-20{
+        height: 0px;
+    }
+    .buttons{
+        margin-bottom: 20px;
+    }
+   .buttons .btn-default{
+        margin-left: 3px;
+    }
+}
+}

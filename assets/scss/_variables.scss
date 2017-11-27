@@ -1,0 +1,41 @@
+$primary-color:#12baf8; //replace this color code with your favorite one
+$secondry-color:#2cdd9d;
+$tritary-color:#f2774c;
+$primary-font: 'Roboto', sans-serif;//default font of this template
+$secondry-font:"Raleway", sans-serif;
+$tritary-font:'Merriweather', serif;;
+$base-color:#4d4d4d;
+$default-color:#f5f5f5;
+$dark-color:#393f4d;
+
+
+.bg-blue{
+    background: $primary-color;
+}
+.bg-dark-blue{
+    background-color: #272e43;
+}
+.bg-green{
+    background: #93c214;
+}
+.bg-red{
+    background: #f2774c;
+}
+.light-bg{
+    background-color: #f5f5f5;
+}
+.dark-bg{
+    background-color: #333333;
+}
+.skin-bg{
+    background-color: $primary-color;
+}
+.gray-bg{
+    background: #fcfcfc;
+}
+.pattern-bg{
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+}
+
+

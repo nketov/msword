@@ -1,0 +1,20 @@
+/*
+clients section
+*/
+.clients-section{
+    .center-title{
+        h2,p{
+            color: #fff;
+        }
+        p{
+            opacity: 0.8;
+        }
+    }
+    img{
+        opacity: 0.7;
+        @include transition(all 0.3s);
+    }
+    a:hover img{
+        opacity:1;
+    }
+}

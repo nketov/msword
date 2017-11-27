@@ -1,0 +1,59 @@
+/*
+Mentos forms style
+*/
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+    height: 50px;
+    font-size: 14px;
+}
+.form-control{
+    
+    @include box-shadow(none);
+        min-height: 50px;
+    padding-left: 20px;
+    &.error{
+        border-color:  #f95858;
+        color: #f95858;
+    }
+     &.success{
+        border-color:  #9fcf0e;
+        color: #9fcf0e;
+    }
+    &:focus{
+      @include box-shadow(none);   
+    }
+}
+.mentos-newsletter{
+    .btn-primary{
+        border-radius: 0px;
+            border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    }
+    .form-control{
+        @include border-radius(30px);
+    }
+}
+.newsletter-section{
+    background-color: #fefefe;
+    background-image: url(../images/pattern.png);
+    background-repeat: repeat;
+}
+
+.mentos-contact{
+    .form-control{
+        margin-bottom: 15px;
+    }
+}
+.form-bg{
+    padding: 30px 20px;
+    background-color: rgba(0,0,0,0.7);
+    @include border-radius(5px);
+    border-top: 5px solid $primary-color;
+    @include box-shadow(0px 10px 10px rgba(0,0,0,0.2));
+    .form-control{
+        margin-bottom: 15px;
+        border:0px;
+    }
+    h5{
+        color: #fff;
+    }
+}

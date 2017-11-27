@@ -1,0 +1,32 @@
+/*
+Modals stylesheet
+*/
+/**video modal**/
+.video-modal{
+    .modal-header{
+        padding: 0px;
+        min-height: auto;
+        border: 0px;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .modal-content{
+        border: 0px;
+        @include border-radius(0px);
+        position: relative;
+        margin-top: 70px;
+    }
+    .modal-header .close {
+    margin-top: -2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    top:-20px;
+    opacity: 1;
+    color: #fff;
+}
+}
+
+

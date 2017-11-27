@@ -1,0 +1,45 @@
+/*
+Collapse css
+*/
+.panel-group{
+    .panel{
+        @include border-radius(0px);
+        @include box-shadow(none);
+        border: 0px;
+    }
+}
+.panel-heading{
+
+    padding: 0;
+    a{
+        display: block;
+        padding: 10px 15px;
+        position: relative;
+        color: $primary-color;
+        text-transform:capitalize;
+        &:after{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            display: block;
+            content: "\f3d0";
+            font-family: "Ionicons";
+            color: $primary-color;
+        }
+        &.collapsed{
+             color:#333;
+            &:after{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            display: block;
+            content: "\f3d8";
+            font-family: "Ionicons";
+            color: #333;
+        }
+        }
+    }
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border-top:0px;
+}

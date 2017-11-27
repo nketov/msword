@@ -1,0 +1,39 @@
+/*
+Image overlay style
+*/
+.folio-box{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color:$primary-color;
+    img{
+        @include transition(all 0.3s);
+        opacity: 0.9;
+    }
+    .folio-overlay{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        padding: 20px;
+        text-align: right;
+        left: 0;
+        bottom: 0;
+        @include transition(all 0.3s);
+        h4{
+            color: #fff;
+            margin-bottom: 0px;
+            text-transform: capitalize;
+        }
+        span{
+            color: #eee;
+            font-style: italic;
+            
+        }
+    }
+    &:hover{
+        img{
+            @include transform(scale(1.1));
+            opacity: 0.8;
+        }
+    }
+}

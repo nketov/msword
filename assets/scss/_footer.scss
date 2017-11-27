@@ -1,0 +1,63 @@
+/*
+Footer styles
+*/
+.footer{
+    background: $dark-color;
+        color: #fff;
+    opacity: 0.7;
+    h4{
+        margin-bottom: 20px;
+        color:#fff;
+        font-weight: 500;
+    }
+    p,address{
+        color: #fff;
+        opacity:0.7;
+    }
+    a{
+        img{
+            display: block;
+            margin-bottom: 5px;
+           
+        }
+    }
+    ul{
+        margin: 0px;
+        li{
+            display: block;
+           
+            a{
+                 color:#fff;
+            opacity:0.7;
+                display: block;
+                position: relative;
+                 padding: 6px 0;
+                &:before{
+                        content: "\f3d3";
+                        font-family: "Ionicons";
+                        display: inline-block;
+                        padding-right: 8px;
+                }
+                &:after{
+                    content: "";
+                    border-bottom: 1px solid transparent;
+                    height: 1px;
+                    position: absolute;
+                    left: 0;
+                    bottom:0;
+                    width:0;
+                    @include transition(all 0.3s);
+                }
+                &:hover{
+                    color: $primary-color;
+                    opacity:1;
+                    &:after{
+                    width:100%;
+                    border-bottom-color: $primary-color;
+                }
+                }
+            }
+        }
+    }
+}
+

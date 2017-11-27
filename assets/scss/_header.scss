@@ -1,0 +1,71 @@
+/*
+header styles
+*/
+
+.navbar-nav > li > a{
+    font-family: $primary-font;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 0.8;
+    &:hover{
+        opacity: 1;
+    }
+}
+.navbar-inverse.navbar-transparent{
+    margin:0px;
+    padding:15px 0;
+    border:0px;
+    background-color:transparent;
+    @include transition(all 0.4s ease-in-out);
+    .navbar-nav > li > a,span.dropdown-toggle{
+        color: #fff;      
+    }
+    
+    &.shrink{
+        padding: 5px 0;
+        background-color:  $dark-color;
+    }
+}
+
+span.dropdown-toggle{
+    display: block;
+    padding: 15px;
+    font-family: $primary-font;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    @include transition (all 0.3s);
+}
+.navbar-brand{
+    font-family: $secondry-font;
+    font-size: 24px;  
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: 700;
+}
+.navbar-inverse .navbar-brand{
+    color:#fff;
+}
+.navbar-inverse.navbar-transparent .navbar-nav>.active>a, .navbar-inverse.navbar-transparent .navbar-nav>.active>a:focus, .navbar-inverse.navbar-transparent .navbar-nav>.active>a:hover, .navbar-inverse.navbar-transparent .navbar-nav>li>a:hover, span.dropdown-toggle:hover {
+    color: #fff;
+    background-color: transparent;
+    opacity: 1;
+}
+.btn-navigation{
+    margin-left: 30px;
+    margin-top: 9px;
+}
+.dropdown-menu{
+    @include border-radius(0px);
+    border: 0px;
+    padding: 10px;
+    >li>a{
+        padding: 9px 20px;
+        text-transform: capitalize;
+    }
+}
