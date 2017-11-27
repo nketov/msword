@@ -1,69 +1,65 @@
 <?PHP
 
+
 if (strtoupper($_POST["WMI_ORDER_STATE"]) == "ACCEPTED") {
+    header('Content-Type: text/html; charset=utf-8');
 
-$text='ИНСТРУКЦИЯ
-Здравствуйте!
-Благодарим Вас за использование нашего сервиса! Мы рады Вашему обращению и возможности помочь Вам!
-Заявление теперь у Вас. Наши юристы еще раз проверят его на правильность адресов, формулировок и форм — чтобы оно было безупречным. Если найдем, то вышлем Вам отредактированное заявление в течение суток (обычно до конца дня). Если не выслали — значит Ваше заявление полностью корректно.
-Итак, этапы:
-1.	Вы получили это письмо с Заявлением и инструкцией;
-2.	Вам необходимо подписать Заявление и направить кредитору/коллектору. Мы можете сделать это следующими способами:
-a.	По почте заказным письмом с уведомлением. В этом случае доказательством направления письма будет квиток-уведомление, который Вам выдадут на почте. СОХРАНИТЕ ЕГО!
-b.	Лично доставив его в отделение кредитора. В этом случае Вам необходимо будет сделать 2 экземпляра Заявления и, придя к кредитору, поставить отметку о вручении ему одного экземпляра (как правило, это делает Канцелярия, проставляя печать или написав «принято, дата, подпись» на втором, Вашем экземпляре. СОХРАНИТЕ ЕГО!
-В обоих случаях очень важно сохранять квиток/второй экземпляр Заявления, так как если кредитор/коллектор не прекратит свою деятельность, этот документ поможет нам надавить на коллектора. Без документа любое давление будет бессмысленным.
-3.	Будьте готовы выждать 2-3 дня. На практике звонки прекращаются на следующий день, однако в отдельных случаях могут быть исключения. По прошествии 5 рабочих дней — звоните нам, мы задействуем наши юридические ресурсы. Наш телефон +7 495 532-19-44. Будьте готовы выслать на нашу почту help@collectoramnet.ru отсканированные документы: подписанное заявление и (если направляли почтой) почтовый квиток с уведомлением о вручении.
-4.	Да, мы сопровождаем процессы в суде для наших клиентов. Мы начинаем от суммы в 300 000 рублей и пока работаем только в Москве. Пожалуйста, звоните нам, и мы обо всем договоримся.
-';
+    $text = file_get_contents('pattern/Instruction.htm');
 
+    $tranzaction = $_POST["WMI_PAYMENT_NO"];
+    $description =$_POST["WMI_DESCRIPTION"];
 
-    $contractNumber = $_POST["WMI_PAYMENT_NO"];
+    $docxFile = 'pattern/mails/' . $tranzaction . '.docx';
+    $email = file_get_contents("pattern/mails/" . $tranzaction . ".eml");
 
-    $docxFile = 'pattern/mails/' . (int)$contractNumber . '.docx';
-    $email = file_get_contents("pattern/mails/" . (int)$contractNumber . ".eml");
-    $dir = (int)$contractNumber . '/';
-    if (!file_exists('pattern/mails/' . $dir)) mkdir('pattern/mails/' . $dir, 0755, true);
-    copy($docxFile, 'pattern/mails/' . $dir . 'Заявление на отключение коллекторов.docx');
+  
+  
+        //mail@collectoramnet.ru
+    if (mailWithFile("mail@collectoramnet.ru", $description, $description, 'pattern/mails/'.$tranzaction.'.docx')) {
+        //ab@grey-fox.ru
+        mailWithFile("ab@grey-fox.ru", $description, $description, 'pattern/mails/'.$tranzaction.'.docx');
 
-
-    if (mailWithFile("ab@grey-fox.ru", '№' . $contractNumber, 'Договор №' . $contractNumber . ' оплачен', 'pattern/mails/' . $dir . 'Заявление на отключение коллекторов.docx')) {
         echo "WMI_RESULT=OK";
-        mailWithFile($email, '№' . $contractNumber, $text, 'pattern/mails/' . $dir . 'Заявление на отключение коллекторов.docx');
+        mailWithFile($email,  'Заявление на отключение коллекторов', $text, 'pattern/mails/'.$tranzaction.'.docx');
 
-        unlink("pattern/mails/" . (int)$contractNumber . ".docx");
-        unlink("pattern/mails/" . (int)$contractNumber . ".eml");
-        unlink('pattern/mails/' . $dir . 'Заявление на отключение коллекторов.docx');
-        unlink('pattern/mails/' . (int)$contractNumber);
-    }
-} else {
-
-    if ($_GET['contractID']) {
-
-        makeDocx();
-
-        ?>
-        <head>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        </head>
-        <form id="formW" method="post" action="https://wl.walletone.com/checkout/checkout/Index">
-            <input name="WMI_MERCHANT_ID" hidden value="196139710250"/>
-            <input name="WMI_PAYMENT_AMOUNT" hidden value="3.00"/>
-            <input name="WMI_CURRENCY_ID" hidden value="643"/>
-            <input name="WMI_DESCRIPTION" hidden value="Оплата по договору № <?php echo $_GET['contractID']; ?>"/>
-            <input name="WMI_PAYMENT_NO" hidden value="<?php echo $_GET['contractID']; ?>"/>
-            <input name="WMI_SUCCESS_URL" hidden value="http://collectoramnet.ru"/>
-            <input name="WMI_FAIL_URL" hidden value="http://collectoramnet.ru"/>
-
-        </form>
+        unlink("pattern/mails/" . $tranzaction . ".docx");
+        unlink("pattern/mails/" . $tranzaction . ".eml");
 
 
-        <script>
-            $("#formW").submit();
-        </script>
-
-        <?php
     }
 }
+
+
+if ($_GET['contractID']) {
+
+    $tr=md5($_GET['contractID'].time());
+    makeDocx($tr);
+
+    ?>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    </head>
+    <form id="formW" method="post" action="https://wl.walletone.com/checkout/checkout/Index">
+        <input name="WMI_MERCHANT_ID" hidden value="196139710250"/>
+        <input name="WMI_PAYMENT_AMOUNT" hidden value="400.00"/>
+        <input name="WMI_CURRENCY_ID" hidden value="643"/>
+        <input name="WMI_CUSTOMER_PHONE" hidden value="<?php echo str_replace(array(' ','(',')','-'),array('','','',''),$_GET['phone']) ?>"/>
+        <input name="WMI_CUSTOMER_EMAIL" hidden value="<?php echo $_GET['emailAddress']; ?>"/>
+        <input name="WMI_DESCRIPTION" hidden value="<?php echo $_GET['contractID']; ?>"/>
+        <input name="WMI_PAYMENT_NO" hidden value="<?php echo $tr ?>"/>
+        <input name="WMI_SUCCESS_URL" hidden value="http://collectoramnet.ru/?action=paid"/>
+        <input name="WMI_FAIL_URL" hidden value="http://collectoramnet.ru"/>
+
+    </form>
+
+
+    <script>
+        $("#formW").submit();
+    </script>
+
+    <?php
+}
+
 
 function mailWithFile($emailAddress, $subject, $text, $mailFile)
 {
@@ -75,13 +71,16 @@ function mailWithFile($emailAddress, $subject, $text, $mailFile)
     }
 
     $file = fread($file, filesize($mailFile));
-    $mailFile=end(explode('/',$mailFile));
+    $mailFile = 'Заявление на отключение коллекторов.docx';
 
     $boundary = "--" . md5(uniqid(time()));
     $headers = "MIME-Version: 1.0\n";
     $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\n";
+    $headers  .= "From: ЦЕНТР ПРАВОВОЙ ПОДДЕРЖКИ ЗАЕМЩИКОВ <mail@collectoramnet.ru> \r\n";
     $multipart = "--$boundary\n";
     $kod = 'utf-8';
+
+
     $multipart .= "Content-Type: text/html; charset=$kod\n";
     $multipart .= "Content-Transfer-Encoding: Quot-Printed\n\n";
     $multipart .= "$text\n\n";
@@ -99,14 +98,14 @@ function mailWithFile($emailAddress, $subject, $text, $mailFile)
 }
 
 
-function makeDocx()
+function makeDocx($t)
 {
 
 
     $patternFile = 'pattern/pattern.docx';
 
-    $docxFile = 'pattern/mails/' . (int)$_GET['contractID'] . '.docx';
-    $emailFile = 'pattern/mails/' . (int)$_GET['contractID'] . '.eml';
+    $docxFile = 'pattern/mails/' . $t . '.docx';
+    $emailFile = 'pattern/mails/' . $t. '.eml';
 
     if (!file_exists('pattern/mails/')) mkdir('pattern/mails/', 0755, true);
     if (file_exists($docxFile)) unlink($docxFile);
@@ -136,23 +135,32 @@ function makeDocx()
     $denial = explode('/', $_GET['denial']);
 
 
+    if(empty($date1[0])){
+        $date1[0]=date('d');
+        $date1[1]=date('m');
+        $date1[2]=date('Y');
+    }
+        
+
     $params = array(
 
-        '{{CREDITOR}}' => $_GET['creditor'] ? $_GET['creditor'] : " ",
-        '{{CREDITOR_ADRESS}}' => $_GET['creditorAdress'] ? $_GET['creditorAdress'] : " ",
+        '{{CREDITOR}}' =>stripcslashes($_GET['creditor']),
+        '{{CREDITOR_ADRESS}}' => stripcslashes($_GET['creditorAdress']),
 
-        '{{DEBITOR}}' => $_GET['debitor'] ? $_GET['debitor'] : " ",
-        '{{DEBITOR_ADRESS}}' => $_GET['debitorAdress'] ? $_GET['debitorAdress'] : " ",
-        '{{PHONE}}' => $_GET['phone'] ? $_GET['phone'] : " ",
-        '{{EMAIL}}' => $_GET['emailAddress'] ? $_GET['emailAddress'] : " ",
-        '{{NUMBER}}' => $_GET['contractID'] ? $_GET['contractID'] : " ",
+        '{{DEBITOR}}' => stripcslashes($_GET['debitor']),
+        '{{DEBITOR_ADRESS}}' => stripcslashes($_GET['debitorAdress']),
+        '{{PHONE}}' => $_GET['phone'],
+        '{{EMAIL}}' => $_GET['emailAddress'] ,
+        '{{NUMBER}}' => $_GET['contractID'],
 
         '{D}' => $date[0],
-        '{MONTH}' => "_" . $Month_r[$date[1]] . "_",
+        '{MONTH}' =>  $Month_r[$date[1]] ,
         '{YEAR}' => $date[2],
-
+        
+        
+      
         '{D1}' => $date1[0],
-        '{MONTH1}' => "_" . $Month_r[$date1[1]] . "_",
+        '{MONTH1}' =>  $Month_r[$date1[1]] ,
         '{YEAR1}' => $date1[2],
 
         '{{DENIAL}}' => !empty($denial[0]) ? '(Отказ действует в срок до ' . $denial[0] . ' ' . $Month_r[$denial[1]] . ' ' . $denial[2] . 'г.)' : "",
